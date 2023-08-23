@@ -1,10 +1,11 @@
 import React from "react";
+import Head from "../views/global/Head";
 
 const Main = () => {
     return (
-        <React.Fragmentra>
 
-        </React.Fragmentra>
+        <Head></Head>
+
     )
 }
 

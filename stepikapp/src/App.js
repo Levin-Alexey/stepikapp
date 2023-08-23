@@ -1,10 +1,12 @@
 import './styles/styles'
+import Main from "./components/pages/Main";
+
 
 function App() {
     return (
-        <ragment>
-            <h1>Привет!</h1>
-        </ragment>
+        <>
+            <Main/>
+        </>
     );
 }
 
