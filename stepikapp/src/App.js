@@ -1,11 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/styles'
 
 function App() {
     return (
-        <React.Fragment>
-
-        </React.Fragment>
+        <ragment>
+            <h1>Привет!</h1>
+        </ragment>
     );
 }
 
