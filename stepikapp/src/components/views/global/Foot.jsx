@@ -1,10 +1,14 @@
 import React from "react";
+import css from "../../../styles/styles"
 
+const { FooterContainer } = css
 const Foot = () => {
     return (
-        <React.Fragmentra>
+        <>
+            <FooterContainer>
 
-        </React.Fragmentra>
+            </FooterContainer>
+        </>
     )
 }
 
