@@ -20,6 +20,12 @@ const css = {
       width: 100%;
       height: 80px;
       background-color: #E5E5E5;
-    `
+    `,
+    HeaderCSS: {
+        Logo: styled.div`
+          font-size: 34px;
+          color: #b0f347;
+        `
+    }
 }
 export default css
