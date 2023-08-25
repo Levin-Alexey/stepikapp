@@ -1,12 +1,19 @@
 import React from "react";
+import css from "../../styles/form.css"
 
-const Input = () => {
+const {Input} = css
+
+const InputComponent = () => {
     return (
-        <React.Fragmentra>
-
-        </React.Fragmentra>
+        <>
+            <Input
+                type = {"text"}
+                placeholder = {"Введите сумму транзакции"}
+                maxLength = {"100"}
+            />
+        </>
     )
 }
 
 
-export default Input
+export default InputComponent
