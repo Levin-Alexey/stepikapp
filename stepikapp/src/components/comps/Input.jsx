@@ -4,7 +4,7 @@ import css from "../../styles/form.css"
 const {Input} = css
 
 const InputComponent = (props) => {
-    const { placeholder } = props
+    const { placeholder, action } = props
     const [ inputValue, setinputValue ] = useState(0)
     return (
         <>
@@ -14,10 +14,10 @@ const InputComponent = (props) => {
                 maxLength = {"100"}
                 onChange={event => {
                     const newValue = event.target.value
-                    setinputValue(newValue)
+                    action(newValue)
                 }}
             />
-            <span>{inputValue} руб.</span>
+
         </>
     )
 }
