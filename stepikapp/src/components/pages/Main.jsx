@@ -13,6 +13,10 @@ const Main = () => {
     const validation = () => {
         if (value.length > 2 && type) {
             console.log('Успешная валидация')
+            setValue('')
+            setType('')
+            setComment('')
+
         } else {
             console.log('Ошибка валидации')
         }
@@ -20,9 +24,9 @@ const Main = () => {
     return (<>
         <Head></Head>
         <FormContainer>
-            <InputComponent action={setValue} placeholder={"Введите сумму транзакции"}/>
-            <InputComponent action={setType} placeholder={"Введите тип транзакции"}/>
-            <InputComponent action={setComment} placeholder={"Введите комментарий"}/>
+            <InputComponent inputValue={value} action={setValue} placeholder={"Введите сумму транзакции"}/>
+            <InputComponent inputValue={type} action={setType} placeholder={"Введите тип транзакции"}/>
+            <InputComponent  inputValue={comment} action={setComment} placeholder={"Введите комментарий"}/>
             <Button
                 backgroundColor={"rgb(176, 243, 71)"}
                 onClick={validation}

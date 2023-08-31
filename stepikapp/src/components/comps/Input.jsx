@@ -4,11 +4,12 @@ import css from "../../styles/form.css"
 const {Input} = css
 
 const InputComponent = (props) => {
-    const { placeholder, action } = props
-    const [ inputValue, setinputValue ] = useState(0)
+    const { placeholder, action, inputValue } = props
+    const [ setinputValue ] = useState(0)
     return (
         <>
             <Input
+                value={inputValue}
                 type = {"text"}
                 placeholder = {placeholder}
                 maxLength = {"100"}
